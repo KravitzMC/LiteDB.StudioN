@@ -6,3 +6,4 @@
 
 ## Change Log
 - Remove IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead
+- Shared Connection as Default
