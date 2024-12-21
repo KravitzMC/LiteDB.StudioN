@@ -5,6 +5,6 @@
 ![](https://github.com/KravitzMC/LiteDB.Studio/blob/main/screenshot.png)
 
 ## Change Log
-- Remove IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead
-- Shared Connection mode as Default
-- Remove Unicode flag charactor when viewing table data
+- Remove IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead.
+- Shared Connection mode as Default.
+- Fixed/Remove Unicode flag charactor when viewing table data.
