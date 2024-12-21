@@ -1,4 +1,4 @@
-# LiteDB Management Studio
+# LiteDB Management Studio [MOD]
 
 #### Unofficial A GUI tool for management documents for LiteDB v5 Engine
 
