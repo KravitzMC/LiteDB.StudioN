@@ -6,5 +6,5 @@
 
 ## Change Log
 - Remove IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead
-- Shared Connection as Default
+- Shared Connection mode as Default
 - Remove Unicode flag charactor when viewing table data
