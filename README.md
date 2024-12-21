@@ -5,6 +5,6 @@
 ![](https://github.com/KravitzMC/LiteDB.Studio/blob/main/screenshot.png)
 
 ## Change Log
-- Remove Bad IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead.
-- Shared Connection mode as Default (Ignore used by another process).
+- Fixed/Remove Bad IL Merge use [Costura.Fody](https://github.com/Fody/Costura) instead.
 - Fixed/Remove Bad unicode flag charactor when viewing table data.
+- Shared Connection mode as Default (Ignore .db used by another process).
