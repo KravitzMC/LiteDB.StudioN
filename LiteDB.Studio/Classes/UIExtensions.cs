@@ -52,22 +52,11 @@ namespace LiteDB.Studio
 
                     if (value.IsDocument)
                     {
-                        //if (value[key].IsString)
-                        //{
-                        //    // cell.Value = "sadasdasdasd";
-                        //    // value[key] = "asdashdadjashdjasdd";
-                        //    //MessageBox.Show(System.Text.RegularExpressions.Regex.Unescape(value[key].AsString));
-                        //}
-
-                        cell.Value = value[key]; //System.Text.RegularExpressions.Regex.Unescape(value[key].ToString());
-
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(cell.Value.ToString());
+                        cell.Value = value[key];
                     }
                     else
                     {
-                        cell.Value = value;
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(value.ToString());
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(cell.Value.ToString());
+                        cell.Value = value;                       
                     }
 
                     row.ReadOnly = key == "_id";
