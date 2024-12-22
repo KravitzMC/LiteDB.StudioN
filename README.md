@@ -2,7 +2,7 @@
 
 # LiteDB Studio N
 
-#### Unofficial A modification GUI tool for management DB file for [LiteDB v5 Engine](https://www.litedb.org)
+#### Unofficial A modification GUI tool for management NoSQL database file for [LiteDB v5 Engine](https://www.litedb.org)
 
 ![](https://github.com/KravitzMC/LiteDB.Studio/blob/main/screenshot.png)
 
