@@ -1,3 +1,5 @@
+<img src="https://github.com/KravitzMC/LiteDB.Studio/blob/main/172976723.png" width="85" height="85" align="right">
+
 # LiteDB Studio N
 
 #### Unofficial A GUI tool for management DB file for [LiteDB v5 Engine](https://www.litedb.org)
