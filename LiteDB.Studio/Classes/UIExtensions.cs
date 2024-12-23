@@ -1,18 +1,18 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
-using System.Text;
-using System.Windows.Forms;
-
-namespace LiteDB.Studio
+﻿namespace LiteDB.Studio
 {
+    using System;
+    using System.IO;
+    using System.Reflection;
+    using System.Text;
+    using System.Windows.Forms;
+
     internal static class UIExtensions
     {
         public static void BindBsonData(this DataGridView grd, TaskData data)
         {
             // hide grid if has more than 100000 rows
 
-            grd.Visible = data.Result.Count < 100000;
+            grd.Visible = data.Result.Count < TaskData.RESULT_LIMIT;
             grd.Clear();
 
             foreach (var value in data.Result)
@@ -52,22 +52,11 @@ namespace LiteDB.Studio
 
                     if (value.IsDocument)
                     {
-                        //if (value[key].IsString)
-                        //{
-                        //    // cell.Value = "sadasdasdasd";
-                        //    // value[key] = "asdashdadjashdjasdd";
-                        //    //MessageBox.Show(System.Text.RegularExpressions.Regex.Unescape(value[key].AsString));
-                        //}
-
-                        cell.Value = value[key]; //System.Text.RegularExpressions.Regex.Unescape(value[key].ToString());
-
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(cell.Value.ToString());
+                        cell.Value = value[key];
                     }
                     else
                     {
                         cell.Value = value;
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(value.ToString());
-                        //cell.Value = System.Text.RegularExpressions.Regex.Unescape(cell.Value.ToString());
                     }
 
                     row.ReadOnly = key == "_id";

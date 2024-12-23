@@ -1,19 +1,19 @@
-﻿using ICSharpCode.TextEditor.Util;
-using LiteDB.Studio.Extension;
-using LiteDB.Studio.Forms;
-using System;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace LiteDB.Studio
+﻿namespace LiteDB.Studio
 {
+    using ICSharpCode.TextEditor.Util;
+    using LiteDB.Studio.Extension;
+    using LiteDB.Studio.Forms;
+    using System;
+    using System.Data;
+    using System.Diagnostics;
+    using System.Drawing;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+
     public partial class MainForm : Form
     {
         private const string TAB_SPACES = "         ";

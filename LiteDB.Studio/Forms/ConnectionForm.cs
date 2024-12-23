@@ -83,6 +83,9 @@ namespace LiteDB.Studio.Forms
                     AppSettingsManager.ApplicationSettings.LastConnectionStrings = this.ConnectionString;
                     // add to recent list
                     AppSettingsManager.AddToRecentList(this.ConnectionString);
+                    // store limit
+                    TaskData.RESULT_LIMIT = (int)NResultLimit.Value;
+
                     this.Close();
                 }
             }
@@ -95,7 +98,7 @@ namespace LiteDB.Studio.Forms
         private void BtnOpen_Click(object sender, EventArgs e)
         {
             openFileDialog.FileName = txtFilename.Text;
-            openFileDialog.Filter = "LiteDB File (*.db)|*.db";
+            openFileDialog.Filter = "LiteDB File (*.db)|*.db|All File (*.*)|*.*";
             openFileDialog.CheckFileExists = false;
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)

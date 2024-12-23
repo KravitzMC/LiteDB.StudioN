@@ -40,6 +40,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtFilename = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.NResultLimit = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbSort = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +55,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NResultLimit)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -92,10 +96,10 @@
             this.btnOK.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Image = global::LiteDB.Studio.Properties.Resources.database_connect;
             this.btnOK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOK.Location = new System.Drawing.Point(454, 383);
+            this.btnOK.Location = new System.Drawing.Point(448, 434);
             this.btnOK.Name = "btnOK";
             this.btnOK.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnOK.Size = new System.Drawing.Size(127, 38);
+            this.btnOK.Size = new System.Drawing.Size(133, 38);
             this.btnOK.TabIndex = 11;
             this.btnOK.Text = "Connect";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -115,7 +119,7 @@
             // txtInitialSize
             // 
             this.txtInitialSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInitialSize.Location = new System.Drawing.Point(151, 61);
+            this.txtInitialSize.Location = new System.Drawing.Point(151, 67);
             this.txtInitialSize.Name = "txtInitialSize";
             this.txtInitialSize.Size = new System.Drawing.Size(70, 23);
             this.txtInitialSize.TabIndex = 24;
@@ -142,6 +146,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.NResultLimit);
+            this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.cmbSort);
             this.groupBox3.Controls.Add(this.label2);
@@ -154,15 +161,55 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(12, 159);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(569, 209);
+            this.groupBox3.Size = new System.Drawing.Size(569, 264);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Parameters";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(277, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 15);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Rows";
+            // 
+            // NResultLimit
+            // 
+            this.NResultLimit.Location = new System.Drawing.Point(151, 143);
+            this.NResultLimit.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
+            this.NResultLimit.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NResultLimit.Name = "NResultLimit";
+            this.NResultLimit.Size = new System.Drawing.Size(120, 23);
+            this.NResultLimit.TabIndex = 40;
+            this.NResultLimit.Value = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 147);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 15);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Limit Exceeded:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(274, 103);
+            this.label4.Location = new System.Drawing.Point(274, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(12, 15);
             this.label4.TabIndex = 38;
@@ -174,7 +221,7 @@
             this.cmbSort.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSort.FormattingEnabled = true;
-            this.cmbSort.Location = new System.Drawing.Point(292, 100);
+            this.cmbSort.Location = new System.Drawing.Point(292, 105);
             this.cmbSort.Name = "cmbSort";
             this.cmbSort.Size = new System.Drawing.Size(117, 23);
             this.cmbSort.TabIndex = 37;
@@ -182,7 +229,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 103);
+            this.label2.Location = new System.Drawing.Point(21, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 36;
@@ -194,7 +241,7 @@
             this.cmbCulture.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbCulture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCulture.FormattingEnabled = true;
-            this.cmbCulture.Location = new System.Drawing.Point(151, 100);
+            this.cmbCulture.Location = new System.Drawing.Point(151, 105);
             this.cmbCulture.Name = "cmbCulture";
             this.cmbCulture.Size = new System.Drawing.Size(117, 23);
             this.cmbCulture.TabIndex = 35;
@@ -202,7 +249,7 @@
             // chkUpgrade
             // 
             this.chkUpgrade.AutoSize = true;
-            this.chkUpgrade.Location = new System.Drawing.Point(21, 175);
+            this.chkUpgrade.Location = new System.Drawing.Point(21, 220);
             this.chkUpgrade.Name = "chkUpgrade";
             this.chkUpgrade.Size = new System.Drawing.Size(212, 19);
             this.chkUpgrade.TabIndex = 33;
@@ -211,7 +258,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 25);
+            this.label1.Location = new System.Drawing.Point(21, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 32;
@@ -220,7 +267,7 @@
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Location = new System.Drawing.Point(151, 22);
+            this.txtPassword.Location = new System.Drawing.Point(151, 27);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(404, 23);
@@ -229,7 +276,7 @@
             // chkReadonly
             // 
             this.chkReadonly.AutoSize = true;
-            this.chkReadonly.Location = new System.Drawing.Point(21, 139);
+            this.chkReadonly.Location = new System.Drawing.Point(21, 184);
             this.chkReadonly.Name = "chkReadonly";
             this.chkReadonly.Size = new System.Drawing.Size(78, 19);
             this.chkReadonly.TabIndex = 27;
@@ -240,7 +287,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 64);
+            this.label3.Location = new System.Drawing.Point(21, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 15);
             this.label3.TabIndex = 30;
@@ -252,7 +299,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.ClientSize = new System.Drawing.Size(596, 436);
+            this.ClientSize = new System.Drawing.Size(596, 478);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -274,6 +321,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NResultLimit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,5 +347,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbCulture;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown NResultLimit;
+        private System.Windows.Forms.Label label5;
     }
 }

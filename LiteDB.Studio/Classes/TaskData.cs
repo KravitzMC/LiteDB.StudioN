@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace LiteDB.Studio
+﻿namespace LiteDB.Studio
 {
-    class TaskData
-    {
-        public const int RESULT_LIMIT = 1000;
+    using System;
+    using System.Collections.Generic;
+    using System.Threading;
 
+    internal class TaskData
+    {
+        public static int RESULT_LIMIT { get; set; }
         public int Id { get; set; }
         public bool Executing { get; set; } = false;
         public string Filename { get; set; } = null;
