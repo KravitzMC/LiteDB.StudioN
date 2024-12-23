@@ -10,7 +10,7 @@
 - Fixed/Remove Bad IL Merge freezee. and then use [Costura.Fody](https://github.com/Fody/Costura) instead.
 - Fixed/Remove Bad Unicode flag charactor while viewing table data.
 - Shared Connection mode as Default (Ignore .db used by another process).
-- New Custom UI Limit Exceeded rows.
+- New Custom UI Limit Exceeded rows (default 100000).
 - Redesign some Form.
 
 
