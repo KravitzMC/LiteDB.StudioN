@@ -14,7 +14,8 @@
 - Redesign some Form.
 
 ## In-Progress 
-- [ ] Add allow Cell edit value.
+- [ ] Add allow Cell edit values.
+- [ ] Fully dark theme.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
