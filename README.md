@@ -13,6 +13,8 @@
 - Add Custom UI Limit Exceeded parameters (default 100000 records).
 - Redesign some Form.
 
+## In-Progress 
+- [ ] Add allow Cell edit value.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
