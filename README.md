@@ -14,7 +14,7 @@
 - Redesign some Form.
 
 ## In-Progress 
-- [ ] Add allow Cell edit values.
+- [ ] Add allow Cell edit/update values.
 - [ ] Fully dark theme.
 
 ## Contributing
