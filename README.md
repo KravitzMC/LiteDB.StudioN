@@ -6,6 +6,8 @@
 
 ![](https://github.com/KravitzMC/LiteDB.Studio/blob/main/screenshot.png)
 
+![](https://github.com/KravitzMC/LiteDB.Studio/blob/main/excc2.png)
+
 ## Change Log v1.2.9.0
 - Fixed/Remove Bad IL Merge freezee. and then use [Costura.Fody](https://github.com/Fody/Costura) instead.
 - Fixed/Remove Bad Unicode flag charactor while viewing table data.
